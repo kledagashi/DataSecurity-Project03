@@ -1,4 +1,4 @@
-# DataSecurity Project 03 - Grupi 24 
+# Data Security Project 03 - Grupi 24 
 
 ### General Info 
 
