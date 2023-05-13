@@ -12,7 +12,7 @@ public class Server {
     private static final String DB_PASSWORD = "password";
 
     public static void main(String[] args) {
-
+        System.out.println("Hello World");
     }
 
 }
