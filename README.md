@@ -2,18 +2,18 @@
 
 ### General Info 
 
-A [university](https://fiek.uni-pr.edu) team project organized by ***Data Security*** subject.
+A [university](https://fiek.uni-pr.edu) team project. 
 
-The idea behind this project is writting an aplication for a **Client-Server** Communication.
-
-Where data communication between the Client and Server is encrypted between DES-CBC and where the *private key* is protected with a *public key*.
-
+## How does it work?
+The Client and the Server communicate with each other exchanging encrypted messages
+1. Exchanging keys
+* The client and the server exchange their keys where the private key is protected with their public key.
+  * Before the communicating begins the two parts do some sort of handshake!
+2. The algorythm which we're going to implement for encrypting messages is [Data Encryption Standard](https://https://en.wikipedia.org/wiki/Des)
+3. After the messages are exchanged the messages are decrypted 
 
 ### Technologies 
-
-
-
-
+The implementation of the program was made using Java[https://www.java.com/en/] Programming Language.
 
 ### Contributors
 
