@@ -12,3 +12,21 @@ def initialize_server():
     port = 1234
     s.bind((host, port))
     s.listen(1)
+
+    
+    conn, addr = s.accept()
+
+    return conn
+
+
+def GUI():
+    global chatlog
+    global textbox
+
+    
+    gui = Tk()
+   
+    gui.title("Server Chat")
+    
+    gui.geometry("380x430")
+
