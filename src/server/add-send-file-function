@@ -1,0 +1,17 @@
+def send_file(actualfilename, receivedfilename):
+    
+    file = open(actualfilename, "r")
+    data = file.read()
+
+    
+    conn.send(receivedfilename.encode("ascii"))
+    msg = conn.recv(1024).decode("ascii")
+    print(f"[SERVER]: {msg}")
+
+   
+    conn.send(data.encode("ascii"))
+    msg = conn.recv(1024).decode("ascii")
+    print(f"[SERVER]: {msg}")
+
+   
+    file.close()
