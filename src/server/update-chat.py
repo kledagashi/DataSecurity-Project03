@@ -5,6 +5,7 @@ def update_chat(msg, state):
     if state == 0:
         chatlog.insert(END, msg)
     else:
+        chatlog.insert(END, "CLIENT: ")
         chatlog.insert(END, msg)
     chatlog.config(state=DISABLED)
    
